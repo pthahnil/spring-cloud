@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8060/eureka/
+
+spring:
+  application:
+    name: service-ribbon
+
+#\u7194\u65AD\u6253\u5F00
+feign:
+  hystrix:
+    enabled: true
+
+
